@@ -12,11 +12,12 @@ import (
 // After successful initialization, the library must be finalized using 'Close' function.
 //
 // Example usage:
-//      err := termbox.Init()
-//      if err != nil {
-//              panic(err)
-//      }
-//      defer termbox.Close()
+//
+//	err := termbox.Init()
+//	if err != nil {
+//	        panic(err)
+//	}
+//	defer termbox.Close()
 func Init() error {
 	var err error
 
@@ -34,12 +35,12 @@ func Init() error {
 		return err
 	}
 
-	err = get_console_mode(in, &orig_mode)
+	//err = get_console_mode(in, &orig_mode)
 	if err != nil {
 		return err
 	}
 
-	err = set_console_mode(in, enable_window_input)
+	//err = set_console_mode(in, enable_window_input)
 	if err != nil {
 		return err
 	}
