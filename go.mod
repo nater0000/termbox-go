@@ -1,4 +1,4 @@
-module termbox-go
+module github.com/nater0000/termbox-go
 
 go 1.22.0
 
